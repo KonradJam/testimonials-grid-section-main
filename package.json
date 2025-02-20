@@ -1,0 +1,14 @@
+{
+  "name": "testimonials-grid-section-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Testimonials grid section coding challenge](./preview.jpg)",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch --update --no-source-map --style=expanded assets/scss:assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.85.0"
+  }
+}

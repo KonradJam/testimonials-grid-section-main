@@ -1,0 +1,29 @@
+$font-family-serif: "Barlow Semi Condensed", serif;
+
+@mixin text-preset-1 {
+    font-family: $font-family-serif;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+@mixin text-preset-2 {
+    font-family: $font-family-serif;
+    font-size: .8125rem;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+@mixin text-preset-3 {
+    font-family: $font-family-serif;
+    font-size: .8125rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+@mixin text-preset-4 {
+    font-family: $font-family-serif;
+    font-size: .6875rem;
+    line-height: 1.4;
+    font-weight: 500;
+}
