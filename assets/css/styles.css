@@ -35,3 +35,98 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*RESET - stop*/
+body {
+  background-color: #F6F5F6;
+  margin-block: clamp(4.563rem, 3.966rem + 2.545vw, 5.188rem); /* min: 73px, max: 83px */
+  margin-inline: clamp(2.188rem, 0.637rem + 6.616vw, 3.813rem); /* min: 35px, max: 61px */
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.testimonials__testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 8px;
+  background: hsl(0, 0%, 100%);
+  box-shadow: 40px 60px 50px -47px hsla(217, 19%, 35%, 0.25);
+}
+
+.testimonial__header {
+  display: grid;
+  grid-template-columns: repeat(2, fit-content(100%));
+  column-gap: 1rem;
+}
+.testimonial__image {
+  inline-size: 1.75rem;
+  block-size: 1.75rem;
+  grid-row: 1/span 2;
+  align-self: center;
+  border: solid 2px white;
+  border-radius: 50%;
+}
+.testimonial__author {
+  font-family: "Barlow Semi Condensed", serif;
+  font-size: 0.8125rem;
+  line-height: 1.1;
+  font-weight: 500;
+}
+.testimonial__verified {
+  font-family: "Barlow Semi Condensed", serif;
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+.testimonial__summary {
+  font-family: "Barlow Semi Condensed", serif;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.testimonial__full-opinion {
+  font-family: "Barlow Semi Condensed", serif;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.u-color-purple-50 {
+  color: hsl(260, 100%, 95%);
+}
+.u-color-white {
+  color: hsl(0, 0%, 100%);
+}
+.u-color-grey-100 {
+  color: hsl(214, 17%, 92%);
+}
+.u-color-grey-200 {
+  color: hsl(0, 0%, 81%);
+}
+.u-color-grey-400 {
+  color: hsl(224, 10%, 45%);
+}
+.u-color-grey-500 {
+  color: hsl(217, 19%, 35%);
+}
+.u-bg-color-purple-500 {
+  background-color: hsl(263, 55%, 52%);
+}
+.u-bg-color-grey-500 {
+  background-color: hsl(217, 19%, 35%);
+}
+.u-bg-color-dark-blue {
+  background-color: hsl(219, 29%, 14%);
+}
+.u-border-color-purple-50 {
+  border-color: hsl(260, 100%, 95%);
+}
+.u-border-color-grey-100 {
+  border-color: hsl(214, 17%, 92%);
+}
+.u-border-color-grey-400 {
+  border-color: hsl(224, 10%, 45%);
+}

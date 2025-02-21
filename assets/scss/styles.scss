@@ -1,3 +1,110 @@
 @use "assets/reset";
-@use "assets/variables";
-@use "assets/mixins";
+@use "assets/variables" as *;
+@use "assets/mixins" as *;
+@use "sass:color";
+
+body {
+    background-color: $color-bg;
+    margin-block: clamp(4.563rem, calc(3.966rem + 2.545vw), 5.188rem); /* min: 73px, max: 83px */
+    margin-inline: clamp(2.188rem, calc(0.637rem + 6.616vw), 3.813rem); /* min: 35px, max: 61px */
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-400;
+
+
+    &__testimonial {
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-200;
+        padding: $spacing-400;
+        border-radius: 8px;
+        background: $color-white;
+        box-shadow: 40px 60px 50px -47px color.change($color-grey-500, $alpha: 0.25);
+    }
+}
+
+.testimonial {
+    &__header {
+        display: grid;
+        grid-template-columns: repeat(2, fit-content(100%));
+        column-gap: $spacing-200;
+    }
+
+    &__image {
+        inline-size: 1.75rem;
+        block-size: 1.75rem;
+        grid-row: 1 / span 2;
+        align-self: center;
+        border: solid 2px white;
+        border-radius: 50%;
+    }
+
+    &__author {
+        @include text-preset-2;
+    }
+
+    &__verified {
+        @include text-preset-4;
+    }
+
+    &__summary {
+        @include text-preset-1;
+    }
+
+    &__full-opinion {
+        @include text-preset-3;
+    }
+}
+
+.u {
+    &-color-purple-50 {
+        color: $color-purple-50;
+    }
+
+    &-color-white {
+        color: $color-white;
+    }
+
+    &-color-grey-100 {
+        color: $color-grey-100;
+    }
+
+    &-color-grey-200 {
+        color: $color-grey-200;
+    }
+
+    &-color-grey-400 {
+        color: $color-grey-400;
+    }
+
+    &-color-grey-500 {
+        color: $color-grey-500;
+    }
+
+    &-bg-color-purple-500 {
+        background-color: $color-purple-500;
+    }
+
+    &-bg-color-grey-500 {
+        background-color: $color-grey-500;
+    }
+
+    &-bg-color-dark-blue {
+        background-color: $color-dark-blue;
+    }
+
+    &-border-color-purple-50 {
+        border-color: $color-purple-50;
+    }
+
+    &-border-color-grey-100 {
+        border-color: $color-grey-100;
+    }
+
+    &-border-color-grey-400 {
+        border-color: $color-grey-400;
+    }
+}
