@@ -145,7 +145,7 @@ body {
   border-color: hsl(224, 10%, 45%);
 }
 
-@media screen and (min-width: 48rem) {
+@media (min-width: 48rem) {
   .testimonials {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -162,7 +162,7 @@ body {
     inset-block-start: 0;
   }
 }
-@media screen and (min-width: 64rem) {
+@media (min-width: 64rem) {
   body {
     display: flex;
     align-items: center;
