@@ -101,6 +101,13 @@ body {
   font-weight: 500;
 }
 
+.u-visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+}
 .u-color-purple-50 {
   color: hsl(260, 100%, 95%);
 }
