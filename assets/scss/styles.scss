@@ -135,17 +135,17 @@ body {
     }
   
     .testimonials__testimonial {
-      &:nth-child(1),
-      &:nth-child(4),
-      &:nth-child(5) {
+      &:nth-child(2),
+      &:nth-child(5),
+      &:nth-child(6) {
         grid-column: span 2;
       }
 
-      &:nth-child(1) > * {
+      &:nth-child(2) > * {
         z-index: 1;
       }
 
-      &:nth-child(1)::after {
+      &:nth-child(2)::after {
         content: url(../images/bg-pattern-quotation.svg);
         position: absolute;
         inset-inline-start: 23.5rem;
@@ -166,11 +166,11 @@ body {
     .testimonials {
         grid-template-columns: repeat(4, 1fr);
     
-        &__testimonial:nth-child(1)::after {
+        &__testimonial:nth-child(2)::after {
             inset-inline-start: clamp(15.625rem, calc(-3.76rem + 30.288vw), 23.5rem); /* min: 250px, max: 376px */
         }
 
-        &__testimonial:nth-child(5) {
+        &__testimonial:nth-child(6) {
             grid-column: 4;
             grid-row: 1 / span 2;
         }
